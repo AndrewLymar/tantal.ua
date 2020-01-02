@@ -1,0 +1,314 @@
+.gap {
+	> * {
+		margin: 0 $gap-size;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+.col-auto {
+	flex: 1 1 auto;
+}
+
+.col-1 {
+	width: 8.33333%;
+}
+
+.col-2 {
+	width: 16.66666%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33332%;
+}
+
+.col-5 {
+	width: 41.66665%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33331%;
+}
+
+.col-8 {
+	width: 66.66664%;
+}
+
+.col-9 {
+	width: 74.99997%;
+}
+
+.col-10 {
+	width: 83.3333%;
+}
+
+.col-11 {
+	width: 91.66663%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.jc-start {
+	justify-content: flex-start;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.jc-end {
+	justify-content: flex-end;
+}
+
+.jc-around {
+	justify-content: space-around;
+}
+
+.jc-between {
+	justify-content: space-between;
+}
+
+.ai-stretch {
+	align-items: stretch;
+}
+
+.ai-start {
+	align-items: flex-start;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.ai-baseline {
+	align-items: baseline;
+}
+
+.ai-end {
+	align-items: flex-end
+}
+
+.as-start {
+	align-self: flex-start;
+}
+
+.as-center {
+	align-self: center;
+}
+
+.as-end {
+	align-self: flex-end;
+}
+
+.as-stretch {
+	align-self: stretch;
+}
+
+.centered {
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.no-wrap {
+	flex-wrap: nowrap;
+}
+
+.ta-center {
+	text-align: center;
+}
+
+.ta-left {
+	text-align: left;
+}
+
+.ta-right {
+	text-align: right;
+}
+
+@mixin breakpoint ($breakpoint-name, $breakpoint-size) {
+	@media only screen and (max-width: $breakpoint-size) {
+		.container {
+			padding: 0 5%;
+		}
+
+		.flex-row-#{$breakpoint-name} {
+			display: flex;
+		}
+
+		.flex-col-#{$breakpoint-name} {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.col-auto-#{$breakpoint-name} {
+			flex: 1 1 auto;
+		}
+
+		.col-1-#{$breakpoint-name} {
+			width: 8.33333%;
+		}
+
+		.col-2-#{$breakpoint-name} {
+			width: 16.66666%;
+		}
+
+		.col-3-#{$breakpoint-name} {
+			width: 25%;
+		}
+
+		.col-4-#{$breakpoint-name} {
+			width: 33.33332%;
+		}
+
+		.col-5-#{$breakpoint-name} {
+			width: 41.66665%;
+		}
+
+		.col-6-#{$breakpoint-name} {
+			width: 50%;
+		}
+
+		.col-7-#{$breakpoint-name} {
+			width: 58.33331%;
+		}
+
+		.col-8-#{$breakpoint-name} {
+			width: 66.66664%;
+		}
+
+		.col-9-#{$breakpoint-name} {
+			width: 74.99997%;
+		}
+
+		.col-10-#{$breakpoint-name} {
+			width: 83.3333%;
+		}
+
+		.col-11-#{$breakpoint-name} {
+			width: 91.66663%;
+		}
+
+		.col-12-#{$breakpoint-name} {
+			width: 100%;
+		}
+
+		.jc-center-#{$breakpoint-name} {
+			justify-content: center;
+		}
+
+		.jc-start-#{$breakpoint-name} {
+			justify-content: flex-start;
+		}
+
+		.jc-end-#{$breakpoint-name} {
+			justify-content: flex-end;
+		}
+
+		.jc-around-#{$breakpoint-name} {
+			justify-content: space-around;
+		}
+
+		.jc-between-#{$breakpoint-name} {
+			justify-content: space-between;
+		}
+
+		.ai-stretch-#{$breakpoint-name} {
+			align-items: stretch;
+		}
+
+		.ai-start-#{$breakpoint-name} {
+			align-items: flex-start;
+		}
+
+		.ai-center-#{$breakpoint-name} {
+			align-items: center;
+		}
+
+		.ai-baseline-#{$breakpoint-name} {
+			align-items: baseline;
+		}
+
+		.ai-end-#{$breakpoint-name} {
+			align-items: flex-end
+		}
+
+		.as-start-#{$breakpoint-name} {
+			align-self: flex-start;
+		}
+
+		.as-center-#{$breakpoint-name} {
+			align-self: center;
+		}
+
+		.as-end-#{$breakpoint-name} {
+			align-self: flex-end;
+		}
+
+		.as-stretch-#{$breakpoint-name} {
+			align-self: stretch;
+		}
+
+		.centered-#{$breakpoint-name} {
+			align-items: center;
+			justify-content: center;
+		}
+
+		.wrap-#{$breakpoint-name} {
+			flex-wrap: wrap;
+		}
+
+		.no-wrap-#{$breakpoint-name} {
+			flex-wrap: nowrap;
+		}
+
+		.ta-center-#{$breakpoint-name} {
+			text-align: center;
+		}
+
+		.ta-left-#{$breakpoint-name} {
+			text-align: left;
+		}
+
+		.ta-right-#{$breakpoint-name} {
+			text-align: right;
+		}
+	}
+}
+
+@include breakpoint("xl", $xl);
+@include breakpoint("lg", $lg);
+@include breakpoint("md", $md);
+@include breakpoint("sm", $sm);
+@include breakpoint("xs", $xs);

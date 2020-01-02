@@ -1,0 +1,33 @@
+{
+  "name": "basicTemplate",
+  "version": "2.0.0",
+  "description": "my start HTML template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Lymar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-rsync": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "vinyl-ftp": "latest"
+  }
+}
