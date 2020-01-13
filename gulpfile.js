@@ -106,11 +106,11 @@ gulp.task('move', function (done) {
     gulp.src([
 		'app/scripts.min.js',
 		]).pipe(gulp.dest('dist'));
-
-    gulp.src([
-		'app/img/sprite.svg',
-		]).pipe(gulp.dest('dist/img'));
-
+    /*
+        gulp.src([
+    		'app/img/sprite.svg',
+    		]).pipe(gulp.dest('dist/img'));
+    */
     gulp.src([
 		'app/fonts/**/*',
 		]).pipe(gulp.dest('dist/fonts'));
@@ -151,6 +151,6 @@ gulp.task('watch', function (done) {
     done();
 });
 
-gulp.task('build', gulp.series('removedist', 'sass', 'css', 'js', 'svg', 'imagemin', 'move'));
+gulp.task('build', gulp.series('removedist', 'sass', 'css', 'js', 'imagemin', 'move'));
 
 gulp.task('default', gulp.series('sass', 'css', 'js', 'watch'));

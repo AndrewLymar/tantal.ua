@@ -512,9 +512,7 @@
     text-align: right; } }
 
 body {
-  font-family: sans-serif;
-  background: url("img/main-bg.jpg") no-repeat;
-  background-size: cover; }
+  font-family: sans-serif; }
 
 .header__logo {
   margin-top: 50px;
@@ -541,6 +539,7 @@ body {
   color: #897C04; }
 
 .description {
+  max-width: 100%;
   margin-top: 50px;
   font-family: 'Comfortaa', cursive;
   font-size: 18px;
@@ -550,6 +549,9 @@ body {
 .footer {
   margin-top: auto;
   padding-bottom: 100px; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      padding-bottom: 50px; } }
 
 .contacts {
   margin-top: 100px;
@@ -562,7 +564,7 @@ body {
     @media only screen and (max-width: 914px) {
       .contacts__title {
         margin-bottom: 25px; } }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     .contacts__blocks {
       justify-content: center; } }
   .contacts__block {
@@ -570,12 +572,15 @@ body {
     color: #3C4043; }
     .contacts__block:last-child {
       margin-right: 0; }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 768px) {
       .contacts__block {
-        margin-right: 0px;
-        margin-bottom: 25px; } }
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0; } }
   .contacts__email {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #9C1C1F; }
+    .contacts__email a {
+      text-decoration: none; }
     .contacts__email span {
       color: #897C04; }
