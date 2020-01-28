@@ -29,8 +29,8 @@ gulp.task('sass', function () {
 gulp.task('css', function () {
     return gulp.src([
         'app/styles/css/reset.css',
-        'app/styles/css/main.css',
         'app/styles/css/vi-lazyload.css',
+        'app/styles/css/main.css',
         ])
         .pipe(autoprefixer(['last 3 versions']))
         .pipe(cleanCSS({

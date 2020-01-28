@@ -14,8 +14,14 @@ body {
 }
 
 .video {
+    width: 67%;
+    margin: 0 auto;
     margin-top: 80px;
     box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.75);
+
+    @media only screen and (max-width: $md) {
+        width: 100%;
+    }
 }
 
 .vi-lazyload-img {
@@ -105,6 +111,13 @@ body {
             color: #897C04;
         }
     }
+}
+
+.telephone {
+    a {
+        text-decoration: none;
+    }
+
 }
 
 @import "media";
